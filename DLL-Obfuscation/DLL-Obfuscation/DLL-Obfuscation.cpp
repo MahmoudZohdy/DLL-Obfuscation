@@ -8,7 +8,7 @@ void PrintUsage() {
     printf("Operation Type:\n 1 Encrypt the DLL\n 2 Load Encrypted Dll\n");
     printf("DLL-Obfuscation.exe 1 CleanDll.dll ObfuscatedDll.dll\n");
     printf("DLL-Obfuscation.exe 2 2552 ObfuscatedDll.dll\n");
-    printf("DLL-Obfuscation.exe 2 0 ObfuscatedDll.dll\n");
+    printf("DLL-Obfuscation.exe 2 -1 ObfuscatedDll.dll\n");
 
     return;
 }
