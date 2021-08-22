@@ -16,4 +16,5 @@ DLL-Obfuscation.exe 1 CleanDll.dll ObfuscatedDll.dll\n");
 DLL-Obfuscation.exe 2 2552 ObfuscatedDll.dll
 DLL-Obfuscation.exe 2 -1 ObfuscatedDll.dll
 ```
-
+# Note:
+it can Load only Dll encrypted by Operation Type 1, The encryption is simple XOR with the value 0xAB you can change it in the Utiliti.h file, or you can change the encryption function.

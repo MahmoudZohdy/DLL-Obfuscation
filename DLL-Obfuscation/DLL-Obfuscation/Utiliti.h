@@ -350,8 +350,8 @@ void EncryptDecryptCodeSection(BYTE* Data) {
         }
 
         for (DWORD i = 0; i < pSourceImage->Sections[x].SizeOfRawData; i++) {
-            DWORD64* xx = (DWORD64*)((DWORD64)Data + (DWORD64)pSourceImage->Sections[x].PointerToRawData + (DWORD64)i);
-            *(BYTE*)xx = *(BYTE*)xx ^ 0xab;
+            DWORD64* ByteTohange = (DWORD64*)((DWORD64)Data + (DWORD64)pSourceImage->Sections[x].PointerToRawData + (DWORD64)i);
+            *(BYTE*)ByteTohange = *(BYTE*)ByteTohange ^ 0xab;
 
         }
 
