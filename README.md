@@ -2,7 +2,7 @@
 
 This Project is For Dll Obfuscation, the ida is to encrypt the code section of a dll, then at load time decrypt the code section and map the Dll to memory then fix the relocation and IAT
 
-So the Dll will be encrypted always on disck, and gets decrypted only in memory.
+So the Dll will be always encrypted on disck, and gets decrypted only in memory.
 
 # Usage
 ```
