@@ -12,7 +12,7 @@ Operation Type:
     1 Encrypt the DLL Code Section
     2 Load Encrypted Dll
 
-DLL-Obfuscation.exe 1 CleanDll.dll ObfuscatedDll.dll\n");
+DLL-Obfuscation.exe 1 CleanDll.dll ObfuscatedDll.dll
 DLL-Obfuscation.exe 2 2552 ObfuscatedDll.dll
 DLL-Obfuscation.exe 2 -1 ObfuscatedDll.dll
 ```
