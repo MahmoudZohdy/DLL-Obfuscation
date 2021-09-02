@@ -348,13 +348,13 @@ void EncryptDecryptCodeSection(BYTE* Data) {
             if (pch == NULL)
                 continue;
         }
-
+        printf("in code section \n");
         for (DWORD i = 0; i < pSourceImage->Sections[x].SizeOfRawData; i++) {
             DWORD64* ByteTohange = (DWORD64*)((DWORD64)Data + (DWORD64)pSourceImage->Sections[x].PointerToRawData + (DWORD64)i);
             *(BYTE*)ByteTohange = *(BYTE*)ByteTohange ^ 0xab;
 
         }
 
-        break;
+        //break;
     }
 }

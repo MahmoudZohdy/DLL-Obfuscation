@@ -18,3 +18,6 @@ DLL-Obfuscation.exe 2 -1 ObfuscatedDll.dll
 ```
 # Note:
 it can Load only Dll encrypted by Operation Type 1, The encryption is simple XOR with the value 0xAB you can change it in the Utiliti.h file, or you can change the encryption function.
+
+UPDATE:
+you can see the [second version](https://github.com/MahmoudZohdy/DLL-Obfuscation-V2)
