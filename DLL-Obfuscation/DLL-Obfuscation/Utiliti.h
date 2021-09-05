@@ -123,7 +123,6 @@ DWORD LoadEncryptedDll(CHAR* DllPath) {
     BYTE* Data = ReadDataFromFile(DllPath);
 
     EncryptDecryptCodeSection(Data);
-    
     DWORD Result = LoadDllFromMemory(ProcessHandle, Data, NULL);
 
     return Result;
@@ -314,7 +313,6 @@ DWORD  LoadDllFromMemory(HANDLE hProcess, BYTE* SourceFileData, LPVOID lpParamet
 
     DWORD64 dwEntrypoint = (DWORD64)lpRemoteLibraryBuffer + pSourceHeaders->OptionalHeader.AddressOfEntryPoint;
 
-    //printf("%p\n", dwEntrypoint);
     hThread = CreateRemoteThread(hProcess, NULL, 1024 * 1024, (LPTHREAD_START_ROUTINE)dwEntrypoint, lpParameter, (DWORD)NULL, &dwThreadId);
     if (!hThread) {
         printf("failed to create remote thread Erro Code %x\n", GetLastError());
